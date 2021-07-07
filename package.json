@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-convert-same",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Convert an array to the same data type as a second input array.",
   "license": "Apache-2.0",
   "author": {

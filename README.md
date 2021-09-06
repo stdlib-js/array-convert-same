@@ -146,6 +146,12 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/convert`][@stdlib/array/convert]: convert an array to an array of a different data type.
+
 </section>
 
 <!-- /.related -->
@@ -206,6 +212,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-convert-same/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/array/convert]: https://github.com/stdlib-js/array-convert
+
+<!-- </related-links> -->
 
 </section>
 

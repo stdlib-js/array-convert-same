@@ -39,6 +39,7 @@
   "dependencies": {
     "@stdlib/array-convert": "^0.0.x",
     "@stdlib/array-dtype": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/types": "^0.0.x"
   },
   "devDependencies": {

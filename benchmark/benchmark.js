@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var isCollection = require( '@stdlib/assert-is-collection' );
 var Float64Array = require( '@stdlib/array-float64' );
 var Float32Array = require( '@stdlib/array-float32' );

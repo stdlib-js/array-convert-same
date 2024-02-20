@@ -29,7 +29,7 @@ limitations under the License.
   <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
 </details>
 
-# Convert
+# convertSame
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -45,46 +45,35 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-convert-same
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-convertArraySame = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-convert-same@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-convert-same/tags). For example,
-
-```javascript
-convertArraySame = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-convert-same@v0.2.0-umd/browser.js' )
+var convertSame = require( '@stdlib/array-convert-same' );
 ```
 
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var convertArraySame = require( 'path/to/vendor/umd/array-convert-same/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-convert-same@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.convertArraySame;
-})();
-</script>
-```
-
-#### convertArraySame( x, y )
+#### convertSame( x, y )
 
 Converts an array to the same data type as a second input array.
 
@@ -94,7 +83,7 @@ var Float32Array = require( '@stdlib/array-float32' );
 var x = [ 1.0, 2.0, 3.0 ];
 var y = new Float32Array( 0 );
 
-var out = convertArraySame( x, y );
+var out = convertSame( x, y );
 // returns <Float32Array>[ 1.0, 2.0, 3.0 ]
 ```
 
@@ -135,17 +124,12 @@ The function supports input arrays having the following data types:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {.factory;
+```javascript
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
 var filledarrayBy = require( '@stdlib/array-filled-by' );
 var dtypes = require( '@stdlib/array-dtypes' );
 var ctors = require( '@stdlib/array-ctors' );
-var convertArraySame = require( '@stdlib/array-convert-same' );
+var convertSame = require( '@stdlib/array-convert-same' );
 
 // Create a generic array:
 var arr = filledarrayBy( 5, 'generic', discreteUniform( -100, 100 ) );
@@ -157,14 +141,9 @@ var DTYPES = dtypes();
 var out;
 var i;
 for ( i = 0; i < DTYPES.length; i++ ) {
-    out = convertArraySame( arr, new ( ctors( DTYPES[ i ] ) )( 0 ) );
+    out = convertSame( arr, new ( ctors( DTYPES[ i ] ) )( 0 ) );
     console.log( out );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -232,8 +211,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-convert-same.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-convert-same
 
-[test-image]: https://github.com/stdlib-js/array-convert-same/actions/workflows/test.yml/badge.svg?branch=v0.2.0
-[test-url]: https://github.com/stdlib-js/array-convert-same/actions/workflows/test.yml?query=branch:v0.2.0
+[test-image]: https://github.com/stdlib-js/array-convert-same/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-convert-same/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-convert-same/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-convert-same?branch=main
@@ -267,7 +246,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/convert]: https://github.com/stdlib-js/array-convert/tree/umd
+[@stdlib/array/convert]: https://github.com/stdlib-js/array-convert
 
 <!-- </related-links> -->
 

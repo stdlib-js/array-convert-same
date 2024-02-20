@@ -29,7 +29,7 @@ limitations under the License.
   <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
 </details>
 
-# Convert
+# convertSame
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -70,10 +70,10 @@ To view installation and usage instructions specific to each branch build, be su
 ## Usage
 
 ```javascript
-var convertArraySame = require( '@stdlib/array-convert-same' );
+var convertSame = require( '@stdlib/array-convert-same' );
 ```
 
-#### convertArraySame( x, y )
+#### convertSame( x, y )
 
 Converts an array to the same data type as a second input array.
 
@@ -83,7 +83,7 @@ var Float32Array = require( '@stdlib/array-float32' );
 var x = [ 1.0, 2.0, 3.0 ];
 var y = new Float32Array( 0 );
 
-var out = convertArraySame( x, y );
+var out = convertSame( x, y );
 // returns <Float32Array>[ 1.0, 2.0, 3.0 ]
 ```
 
@@ -129,7 +129,7 @@ var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
 var filledarrayBy = require( '@stdlib/array-filled-by' );
 var dtypes = require( '@stdlib/array-dtypes' );
 var ctors = require( '@stdlib/array-ctors' );
-var convertArraySame = require( '@stdlib/array-convert-same' );
+var convertSame = require( '@stdlib/array-convert-same' );
 
 // Create a generic array:
 var arr = filledarrayBy( 5, 'generic', discreteUniform( -100, 100 ) );
@@ -141,7 +141,7 @@ var DTYPES = dtypes();
 var out;
 var i;
 for ( i = 0; i < DTYPES.length; i++ ) {
-    out = convertArraySame( arr, new ( ctors( DTYPES[ i ] ) )( 0 ) );
+    out = convertSame( arr, new ( ctors( DTYPES[ i ] ) )( 0 ) );
     console.log( out );
 }
 ```
@@ -211,8 +211,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-convert-same.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-convert-same
 
-[test-image]: https://github.com/stdlib-js/array-convert-same/actions/workflows/test.yml/badge.svg?branch=v0.2.0
-[test-url]: https://github.com/stdlib-js/array-convert-same/actions/workflows/test.yml?query=branch:v0.2.0
+[test-image]: https://github.com/stdlib-js/array-convert-same/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-convert-same/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-convert-same/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-convert-same?branch=main

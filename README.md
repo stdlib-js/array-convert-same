@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import convertSame from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-convert-same@esm/index.mjs';
+import convertSame from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-convert-same@v0.2.1-esm/index.mjs';
 ```
 
 #### convertSame( x, y )
@@ -116,7 +116,7 @@ var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-bas
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
 import ctors from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-ctors@esm/index.mjs';
-import convertSame from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-convert-same@esm/index.mjs';
+import convertSame from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-convert-same@v0.2.1-esm/index.mjs';
 
 // Create a generic array:
 var arr = filledarrayBy( 5, 'generic', discreteUniform( -100, 100 ) );

@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Convert an array to the same data type as a second input array.
+> Convert an array to the same [data type][@stdlib/array/dtypes] as a second input array.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -75,7 +75,7 @@ var convertSame = require( '@stdlib/array-convert-same' );
 
 #### convertSame( x, y )
 
-Converts an array to the same data type as a second input array.
+Converts an array to the same [data type][@stdlib/array/dtypes] as a second input array.
 
 ```javascript
 var Float32Array = require( '@stdlib/array-float32' );
@@ -86,21 +86,6 @@ var y = new Float32Array( 0 );
 var out = convertSame( x, y );
 // returns <Float32Array>[ 1.0, 2.0, 3.0 ]
 ```
-
-The function supports input arrays having the following data types:
-
--   `float32`: single-precision floating-point numbers.
--   `float64`: double-precision floating-point numbers.
--   `complex64`: single-precision complex floating-point numbers.
--   `complex128`: double-precision complex floating-point numbers.
--   `generic`: values of any type.
--   `int16`: signed 16-bit integers.
--   `int32`: signed 32-bit integers.
--   `int8`: signed 8-bit integers.
--   `uint16`: unsigned 16-bit integers.
--   `uint32`: unsigned 32-bit integers.
--   `uint8`: unsigned 8-bit integers.
--   `uint8c`: unsigned clamped 8-bit integers.
 
 </section>
 
@@ -247,6 +232,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 <!-- <related-links> -->
 
 [@stdlib/array/convert]: https://github.com/stdlib-js/array-convert
+
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
 
 <!-- </related-links> -->
 

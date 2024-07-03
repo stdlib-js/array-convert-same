@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Convert an array to the same data type as a second input array.
+> Convert an array to the same [data type][@stdlib/array/dtypes] as a second input array.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -45,43 +45,37 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-convert-same
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-convertSame = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-convert-same@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var convertSame = require( 'path/to/vendor/umd/array-convert-same/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-convert-same@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.convertSame;
-})();
-</script>
+var convertSame = require( '@stdlib/array-convert-same' );
 ```
 
 #### convertSame( x, y )
 
-Converts an array to the same data type as a second input array.
+Converts an array to the same [data type][@stdlib/array/dtypes] as a second input array.
 
 ```javascript
 var Float32Array = require( '@stdlib/array-float32' );
@@ -92,21 +86,6 @@ var y = new Float32Array( 0 );
 var out = convertSame( x, y );
 // returns <Float32Array>[ 1.0, 2.0, 3.0 ]
 ```
-
-The function supports input arrays having the following data types:
-
--   `float32`: single-precision floating-point numbers.
--   `float64`: double-precision floating-point numbers.
--   `complex64`: single-precision complex floating-point numbers.
--   `complex128`: double-precision complex floating-point numbers.
--   `generic`: values of any type.
--   `int16`: signed 16-bit integers.
--   `int32`: signed 32-bit integers.
--   `int8`: signed 8-bit integers.
--   `uint16`: unsigned 16-bit integers.
--   `uint32`: unsigned 32-bit integers.
--   `uint8`: unsigned 8-bit integers.
--   `uint8c`: unsigned clamped 8-bit integers.
 
 </section>
 
@@ -130,13 +109,8 @@ The function supports input arrays having the following data types:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {.factory;
+```javascript
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
 var filledarrayBy = require( '@stdlib/array-filled-by' );
 var dtypes = require( '@stdlib/array-dtypes' );
 var ctors = require( '@stdlib/array-ctors' );
@@ -155,11 +129,6 @@ for ( i = 0; i < DTYPES.length; i++ ) {
     out = convertSame( arr, new ( ctors( DTYPES[ i ] ) )( 0 ) );
     console.log( out );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -262,7 +231,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/convert]: https://github.com/stdlib-js/array-convert/tree/umd
+[@stdlib/array/convert]: https://github.com/stdlib-js/array-convert
+
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
 
 <!-- </related-links> -->
 

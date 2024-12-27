@@ -229,11 +229,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-convert-same/main/LICENSE
 
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
+
 <!-- <related-links> -->
 
 [@stdlib/array/convert]: https://github.com/stdlib-js/array-convert
-
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
 
 <!-- </related-links> -->
 

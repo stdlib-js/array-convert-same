@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-convert-same",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Convert an array to the same data type as a second input array.",
   "license": "Apache-2.0",
   "author": {
@@ -48,7 +48,7 @@
     "@stdlib/array-complex128": "^0.3.0",
     "@stdlib/array-complex64": "^0.3.0",
     "@stdlib/array-ctors": "^0.3.0",
-    "@stdlib/array-dtypes": "^0.3.0",
+    "@stdlib/array-dtypes": "^0.4.0",
     "@stdlib/array-filled-by": "^0.2.1",
     "@stdlib/array-float32": "^0.2.2",
     "@stdlib/array-float64": "^0.2.2",

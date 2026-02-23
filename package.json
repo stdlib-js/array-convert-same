@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-convert": "^0.3.0",
+    "@stdlib/array-convert": "^0.3.1",
     "@stdlib/array-dtype": "^0.3.1",
     "@stdlib/string-format": "^0.2.3",
     "@stdlib/types": "^0.4.3",
@@ -49,7 +49,7 @@
     "@stdlib/array-complex64": "^0.3.2",
     "@stdlib/array-ctors": "^0.3.1",
     "@stdlib/array-dtypes": "^0.4.1",
-    "@stdlib/array-filled-by": "^0.3.0",
+    "@stdlib/array-filled-by": "^0.3.1",
     "@stdlib/array-float32": "^0.2.3",
     "@stdlib/array-float64": "^0.2.3",
     "@stdlib/array-int16": "^0.2.3",
@@ -80,7 +80,7 @@
     "@stdlib/complex-float64-imag": "^0.1.2",
     "@stdlib/complex-float64-real": "^0.1.2",
     "@stdlib/math-base-special-pow": "^0.3.1",
-    "@stdlib/random-base-discrete-uniform": "^0.2.1",
+    "@stdlib/random-base-discrete-uniform": "^0.2.2",
     "@stdlib/strided-base-reinterpret-boolean": "^0.0.3",
     "@stdlib/strided-base-reinterpret-complex128": "^0.2.3",
     "@stdlib/strided-base-reinterpret-complex64": "^0.2.2",

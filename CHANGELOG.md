@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-29)
+## Unreleased (2026-08-10)
+
+<section class="features">
+
+### Features
+
+-   [`4d0ce60`](https://github.com/stdlib-js/stdlib/commit/4d0ce60011997633aac407dbba435da1763a2550) - add float16 dtype support to `array/convert-same` [(#14126)](https://github.com/stdlib-js/stdlib/pull/14126)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`4d0ce60`](https://github.com/stdlib-js/stdlib/commit/4d0ce60011997633aac407dbba435da1763a2550) - **feat:** add float16 dtype support to `array/convert-same` [(#14126)](https://github.com/stdlib-js/stdlib/pull/14126) _(by Gururaj Gurram)_
 -   [`3901886`](https://github.com/stdlib-js/stdlib/commit/3901886ff5ff6bdbcfd65ea52109fee0b0e1ff03) - **docs:** fix examples and descriptions in top-level `array` declarations [(#12375)](https://github.com/stdlib-js/stdlib/pull/12375) _(by Philipp Burckhardt, Athan Reines)_
 -   [`00885d3`](https://github.com/stdlib-js/stdlib/commit/00885d3e6afd8118ce2b6e5f7a1c544d5b6d4ffb) - **bench:** refactor to use string interpolation in `array` [(#11411)](https://github.com/stdlib-js/stdlib/pull/11411) _(by Karan Anand, Athan Reines)_
 
@@ -25,9 +36,10 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Gururaj Gurram
 -   Karan Anand
 -   Philipp Burckhardt
 

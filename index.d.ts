@@ -18,7 +18,7 @@
 
 // TypeScript Version: 4.1
 
-/// <reference types="@stdlib/types"/>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 import { AnyArray, Collection, Float16Array, Complex128Array, Complex64Array, BooleanArray } from '@stdlib/types/array';
 
